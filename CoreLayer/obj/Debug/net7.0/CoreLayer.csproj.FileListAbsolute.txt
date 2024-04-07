@@ -1,0 +1,14 @@
+F:\رزومه\Project API\ProductRegistration\CoreLayer\bin\Debug\net7.0\CoreLayer.deps.json
+F:\رزومه\Project API\ProductRegistration\CoreLayer\bin\Debug\net7.0\CoreLayer.runtimeconfig.json
+F:\رزومه\Project API\ProductRegistration\CoreLayer\bin\Debug\net7.0\CoreLayer.dll
+F:\رزومه\Project API\ProductRegistration\CoreLayer\bin\Debug\net7.0\CoreLayer.pdb
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.csproj.AssemblyReference.cache
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.AssemblyInfoInputs.cache
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.AssemblyInfo.cs
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.csproj.CoreCompileInputs.cache
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.dll
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\refint\CoreLayer.dll
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.pdb
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\CoreLayer.genruntimeconfig.cache
+F:\رزومه\Project API\ProductRegistration\CoreLayer\obj\Debug\net7.0\ref\CoreLayer.dll

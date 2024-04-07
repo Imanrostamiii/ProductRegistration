@@ -1,0 +1,17 @@
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\Application.deps.json
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\Application.dll
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\Application.pdb
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\CoreLayer.dll
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\Infrastructure.dll
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\Infrastructure.pdb
+F:\رزومه\Project API\ProductRegistration\Application\bin\Debug\net7.0\CoreLayer.pdb
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.csproj.CopyComplete
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.dll
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\refint\Application.dll
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\Application.pdb
+F:\رزومه\Project API\ProductRegistration\Application\obj\Debug\net7.0\ref\Application.dll
