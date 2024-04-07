@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Service_Layer.Service.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,12 @@ builder.Services.AddDbContext<AppDbcontext>(option =>
 #endregion
 #region Repository
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+#endregion
+#region IjwtRepository
+builder.Services.AddScoped<IJWTRepository, JWTRepository>();
+#endregion
+#region UserManager
+builder.Services.AddTransient<UserManager<loginUser>>();
 #endregion
 #region Identity
 builder.Services.AddIdentity<loginUser, Role>(identityOptions =>
