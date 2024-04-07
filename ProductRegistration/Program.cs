@@ -1,3 +1,4 @@
+using Data.Repositories;
 using Infrastructure.Data.DbContext;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +16,10 @@ builder.Services.AddDbContext<AppDbcontext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("productSell"));
 });
 #endregion
+#region Repository
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+#endregion
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
