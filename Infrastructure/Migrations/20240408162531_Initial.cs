@@ -165,8 +165,8 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NameProduct = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Emile = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NameProduct = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Emile = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     ProductDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -220,6 +220,18 @@ namespace Infrastructure.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_productSelles_Emile",
+                table: "productSelles",
+                column: "Emile",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_productSelles_ProductDate",
+                table: "productSelles",
+                column: "ProductDate",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_productSelles_userId",

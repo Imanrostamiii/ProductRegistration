@@ -86,14 +86,15 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("Emile")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsAvailable")
                         .HasColumnType("bit");
 
                     b.Property<string>("NameProduct")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
@@ -106,6 +107,12 @@ namespace Infrastructure.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Emile")
+                        .IsUnique();
+
+                    b.HasIndex("ProductDate")
+                        .IsUnique();
 
                     b.HasIndex("userId");
 
