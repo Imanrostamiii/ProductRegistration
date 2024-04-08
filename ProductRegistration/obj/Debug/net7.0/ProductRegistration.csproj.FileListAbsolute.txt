@@ -88,3 +88,4 @@ F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\System.CodeDom.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\AutoMapper.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

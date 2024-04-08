@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0+RqDeKFGW0dtujm5e/Ik2vx3HJ6p8pSeVFNJnLruQmqk6IxFHVcM7MUHRl/QwZjMGAr//JLuyjYuGgrgeV6yg==",
+  "dgSpecHash": "FY6Dp1UR4d5/KHLQyVCTlWlNovrO+7dlOm/J+iTVhbcI181ittRNjbctZu/RffSAh6H11cLsV4hESpYIW04Lgg==",
   "success": true,
   "projectFilePath": "F:\\رزومه\\Project API\\ProductRegistration\\ProductRegistration\\ProductRegistration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\plus system\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\plus system\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\plus system\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\plus system\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\plus system\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -3,7 +3,7 @@ using Infrastructure.Entity.User;
 
 namespace ProductRegistration.Modele.Dto.UserDto;
 
-public class LoginDto:BaseDto<LoginDto,loginUser,int>
+public class LoginDto:BaseDto<LoginDto,loginUser,long>
 {
     public string Username { get; set; }
     

@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using Application;
 using Data.Repositories;
 using Infrastructure.Data.DbContext;
 using Infrastructure.Entity.Role;
@@ -27,7 +28,7 @@ builder.Services.AddDbContext<AppDbcontext>(option =>
 });
 #endregion
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerConfiguration>();
-
+builder.Services.AddAutoMapper(typeof(IHaveCustomMapping));
 #region Repository
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 #endregion

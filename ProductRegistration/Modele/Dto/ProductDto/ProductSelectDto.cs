@@ -1,6 +1,9 @@
+using Application.BaseDto;
+using Infrastructure.Entity.Sell;
+
 namespace ProductRegistration.Modele.Dto;
 
-public class ProductSelectDto
+public class ProductSelectDto:BaseDto<ProductSelectDto, productSelles,int>
 {
     public string NameProduct { get; set; }
 

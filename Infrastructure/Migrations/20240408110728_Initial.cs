@@ -170,7 +170,7 @@ namespace Infrastructure.Migrations
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     ProductDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    userId = table.Column<long>(type: "bigint", nullable: false)
+                    userId = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -179,8 +179,7 @@ namespace Infrastructure.Migrations
                         name: "FK_productSelles_AspNetUsers_userId",
                         column: x => x.userId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(

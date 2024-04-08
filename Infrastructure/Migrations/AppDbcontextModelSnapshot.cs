@@ -4,7 +4,6 @@ using Infrastructure.Data.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -12,11 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbcontext))]
-    [Migration("20240407112738_Initial")]
-    partial class Initial
+    partial class AppDbcontextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -105,7 +102,7 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("ProductDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("userId")
+                    b.Property<long?>("userId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -279,9 +276,7 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Infrastructure.Entity.User.loginUser", "users")
                         .WithMany("ProductSellesList")
-                        .HasForeignKey("userId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("userId");
 
                     b.Navigation("users");
                 });

@@ -18,9 +18,9 @@ public class productSelles:BaseEntity<int>
     public DateTime ProductDate { get; set; }
 
    
-    public loginUser users { get; set; }
+    public loginUser? users { get; set; }
     
-    public long userId { get; set; }
+    public long? userId { get; set; }
 
     
 }
