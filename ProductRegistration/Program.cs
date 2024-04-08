@@ -6,8 +6,11 @@ using Infrastructure.Entity.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Service_Layer.Service.Jwt;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using visiteDoctor.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +26,8 @@ builder.Services.AddDbContext<AppDbcontext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("productSell"));
 });
 #endregion
+builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerConfiguration>();
+
 #region Repository
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 #endregion
