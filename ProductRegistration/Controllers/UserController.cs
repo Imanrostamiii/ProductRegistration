@@ -30,11 +30,11 @@ public class UserController:ControllerBase
             PasswordHash = signUpModel.Password,
         
         };
-        //var result = await _jwtRepository.SignUpAsync(newuser);
+        /*//var result = await _jwtRepository.SignUpAsync(newuser);
         /*if (result.Succeeded)
         {
             return Ok(result.Succeeded);
-        }*/
+        }#1#*/
         await _userManager.CreateAsync(newuser, signUpModel.Password);
 
         return Ok(newuser);
