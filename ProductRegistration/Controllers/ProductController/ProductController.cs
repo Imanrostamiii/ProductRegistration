@@ -28,7 +28,7 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<ProductSelectDto>> Get(int id)
+    public async Task<ActionResult<ProductSelectDto>> GetId(int id)
     {
         var model = _mapper.ProjectTo<ProductSelectDto>(_repository.TableNoTracking)
             .FirstOrDefault(p => p.Id.Equals(id));
@@ -88,7 +88,7 @@ public class ProductController : ControllerBase
         var id = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
         user.userId = long.Parse(id);
         _repository.Update(user);
-        return Ok("Update done");
+        return Ok();
     }
 
     [HttpDelete, Authorize]
