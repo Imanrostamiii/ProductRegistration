@@ -58,15 +58,7 @@ public class ProductController : ControllerBase
         var list = await _repository.TableNoTracking.ToListAsync(cancellationToken);
         return Ok(list);
     }
-
-    [HttpGet("by-creator")]
-    public async Task<IActionResult> GetProductsByCreator()
-    {
-        var currentUser = await _userManager.GetUserAsync(User);
-        var products = _repository.Entities.Where(p => p.Id == currentUser.Id).ToList();
-        return Ok(products);
-    }
-
+    
     [HttpPost, Authorize]
     public async Task<IActionResult> Creat(ProductDto dto, CancellationToken cancellationToken)
     {
@@ -90,11 +82,13 @@ public class ProductController : ControllerBase
     }
 
     [HttpPut, Authorize]
-    public IActionResult Put(int id, ProductDto dto)
+    public IActionResult Put(ProductDto dto)
     {
         var user = _mapper.Map<productSelles>(dto);
+        var id = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        user.userId = long.Parse(id);
         _repository.Update(user);
-        return Ok();
+        return Ok("Update done");
     }
 
     [HttpDelete, Authorize]
