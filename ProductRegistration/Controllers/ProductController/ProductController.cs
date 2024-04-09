@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Security.Claims;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Data.Repositories;
 using Infrastructure.Entity.Sell;
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore;
 using ProductRegistration.Modele.Dto;
 
 namespace ProductRegistration.Controllers.ProductController;
+
 [ApiController]
 [Route("api/[controller]/[action]")]
-public class ProductController:ControllerBase
+public class ProductController : ControllerBase
 {
     private readonly IMapper _mapper;
     private readonly IRepository<productSelles> _repository;
@@ -32,12 +34,31 @@ public class ProductController:ControllerBase
             .FirstOrDefault(p => p.Id.Equals(id));
         return Ok(model);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> filter(int Id)
+    {
+        try
+        {
+            var list = _repository.TableNoTracking;
+            if (!string.IsNullOrEmpty(Id.ToString()))
+                list = list.Where(p => p.userId.ToString().Contains(Id.ToString()));
+            var newlist = list.ProjectTo<ProductSelectDto>(_mapper.ConfigurationProvider).ToList();
+            return Ok(newlist);
+        }
+        catch (Exception e)
+        {
+            throw new Exception(e.Message);
+        }
+    }
+
     [HttpGet]
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
         var list = await _repository.TableNoTracking.ToListAsync(cancellationToken);
         return Ok(list);
     }
+
     [HttpGet("by-creator")]
     public async Task<IActionResult> GetProductsByCreator()
     {
@@ -45,12 +66,15 @@ public class ProductController:ControllerBase
         var products = _repository.Entities.Where(p => p.Id == currentUser.Id).ToList();
         return Ok(products);
     }
-    [HttpPost,Authorize]
+
+    [HttpPost, Authorize]
     public async Task<IActionResult> Creat(ProductDto dto, CancellationToken cancellationToken)
     {
         try
         {
             var entity = _mapper.Map<productSelles>(dto);
+            var id = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            entity.userId = long.Parse(id);
             await _repository.AddAsync(entity, cancellationToken);
             var modele = _repository
                 .TableNoTracking
@@ -64,7 +88,8 @@ public class ProductController:ControllerBase
             throw;
         }
     }
-    [HttpPut,Authorize]
+
+    [HttpPut, Authorize]
     public IActionResult Put(int id, ProductDto dto)
     {
         var user = _mapper.Map<productSelles>(dto);
@@ -72,7 +97,7 @@ public class ProductController:ControllerBase
         return Ok();
     }
 
-    [HttpDelete,Authorize]
+    [HttpDelete, Authorize]
     public async Task<IActionResult> deleteItem(int id)
     {
         var modele = _repository.TableNoTracking.FirstOrDefault(p => Equals(p.Id, id));
@@ -84,7 +109,5 @@ public class ProductController:ControllerBase
         var dto = _mapper.Map<ProductSelectDto>(modele);
         _repository.Delete(modele);
         return Ok(dto);
-        
     }
-
 }
