@@ -27,8 +27,13 @@ builder.Services.AddDbContext<AppDbcontext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("productSell"));
 });
 #endregion
+
+#region MyRegion
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerConfiguration>();
+#endregion
+#region AutoMapper
 builder.Services.AddAutoMapper(typeof(IHaveCustomMapping));
+#endregion
 #region Repository
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 #endregion

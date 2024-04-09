@@ -42,43 +42,7 @@ public class JWTRepository : IJWTRepository
   
 
     #endregion
-
-    #region login
-
-    /*
-    public async Task<string> LoginAsync(LoginUser User)
-    {
-        var authclaim = new List<Claim>()
-        {
-            new Claim(ClaimTypes.Name, User.Email),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-        };
-        //creat claim defult
-        //  var auclaim = _signInManager.ClaimsFactory.CreateAsync(User);
-
-        var secretKey = Encoding.UTF8.GetBytes(_configuration["jwt:SecretKey"]); // longer that 16 character
-        var signingCredentials =
-            new SigningCredentials(new SymmetricSecurityKey(secretKey), SecurityAlgorithms.HmacSha256Signature);
-        var encryptionkey = Encoding.UTF8.GetBytes(_configuration["jwt:EncryptKey"]); //must be 16 character
-        var encryptingCredentials = new EncryptingCredentials(new SymmetricSecurityKey(encryptionkey),
-            SecurityAlgorithms.Aes128KW, SecurityAlgorithms.Aes128CbcHmacSha256);
-
-        //var certificate = new X509Certificate2("d:\\aaaa2.cer"/*, "P@ssw0rd"#1#);
-        //var encryptingCredentials = new X509EncryptingCredentials(certificate);
-
-        /*var claims = await _getClaimsAsync(user);#1#
-        var authsignInKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JWT:Key"]));
-        /*var Token = new JwtSecurityToken(
-            issuer: _configuration["JWT:Issuer"],
-            audience: _configuration["JWT:Audience"],
-            expires: DateTime.Now.AddDays(1),
-            //claims: authclaim,
-            signingCredentials: new SigningCredentials(authsignInKey, SecurityAlgorithms.HmacSha256Signature)
-        );#1#
-        //return new JwtSecurityTokenHandler().WriteToken(Token);
-        */
-
-    #endregion
+    
 
     public async Task<string> LoginAsync(loginUser user)
     {
@@ -108,9 +72,7 @@ public class JWTRepository : IJWTRepository
     public async Task<IEnumerable<Claim>> _getClaimsAsync(loginUser user)
     {
         var result = await _signInManager.ClaimsFactory.CreateAsync(user);
-        //add custom claims
         var list1 = new List<Claim>(result.Claims);
-        //list1.Add(new Claim("DepartmentId", user.DepartmentId.ToString()));
         return list1;
     }
 

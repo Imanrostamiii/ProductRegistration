@@ -18,7 +18,6 @@ namespace Data.Repositories
         IQueryable<TEntity> TableNoTracking { get; }
 
         void Add(TEntity entity, bool saveNow = true);
-        /*IEnumerable<DoInformation> GetById(string parameter);*/
         void SaveChanges();
         Task AddAsync(TEntity entity, CancellationToken cancellationToken, bool saveNow = true);
         void AddRange(IEnumerable<TEntity> entities, bool saveNow = true);

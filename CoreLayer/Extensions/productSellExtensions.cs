@@ -10,7 +10,6 @@ public static class productSellExtensions
         IEnumerable<Type> types = assemblies
             .SelectMany(p => p.GetExportedTypes())
             .Where(p => p.IsClass && p.IsPublic && !p.IsAbstract && typeof(BaseType).IsAssignableFrom(p));
-        //.Where(p => p.IsClass  && p.IsSubclassOf(typeof(BaseType)));
         foreach (Type type in types)
         {
             builder.Entity(type);
