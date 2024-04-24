@@ -1,0 +1,14 @@
+F:\رزومه\Project API\ProductRegistration\Domain\bin\Debug\net7.0\Domain.deps.json
+F:\رزومه\Project API\ProductRegistration\Domain\bin\Debug\net7.0\Domain.runtimeconfig.json
+F:\رزومه\Project API\ProductRegistration\Domain\bin\Debug\net7.0\Domain.dll
+F:\رزومه\Project API\ProductRegistration\Domain\bin\Debug\net7.0\Domain.pdb
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.dll
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\refint\Domain.dll
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.pdb
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\Domain.genruntimeconfig.cache
+F:\رزومه\Project API\ProductRegistration\Domain\obj\Debug\net7.0\ref\Domain.dll

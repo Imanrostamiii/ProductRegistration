@@ -1145,7 +1145,7 @@
           }
         }
       },
-      "CoreLayer/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1156,23 +1156,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
         "compile": {
-          "bin/placeholder/CoreLayer.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CoreLayer.dll": {}
-        }
-      },
-      "Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "CoreLayer": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -3433,20 +3420,15 @@
         "version.txt"
       ]
     },
-    "CoreLayer/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../CoreLayer/CoreLayer.csproj",
-      "msbuildProject": "../CoreLayer/CoreLayer.csproj"
-    },
-    "Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Infrastructure >= 1.0.0"
+      "Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3484,8 +3466,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\رزومه\\Project API\\ProductRegistration\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "F:\\رزومه\\Project API\\ProductRegistration\\Infrastructure\\Infrastructure.csproj"
+            "F:\\رزومه\\Project API\\ProductRegistration\\Domain\\Domain.csproj": {
+              "projectPath": "F:\\رزومه\\Project API\\ProductRegistration\\Domain\\Domain.csproj"
             }
           }
         }

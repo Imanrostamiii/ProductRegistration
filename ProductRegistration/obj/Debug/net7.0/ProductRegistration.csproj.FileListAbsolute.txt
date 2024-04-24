@@ -55,10 +55,8 @@ F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Application.dll
-F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\CoreLayer.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Infrastructure.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Application.pdb
-F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\CoreLayer.pdb
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Infrastructure.pdb
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\obj\Debug\net7.0\ProductRegistration.csproj.AssemblyReference.cache
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\obj\Debug\net7.0\ProductRegistration.GeneratedMSBuildEditorConfig.editorconfig
@@ -89,3 +87,5 @@ F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\AutoMapper.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Domain.dll
+F:\رزومه\Project API\ProductRegistration\ProductRegistration\bin\Debug\net7.0\Domain.pdb

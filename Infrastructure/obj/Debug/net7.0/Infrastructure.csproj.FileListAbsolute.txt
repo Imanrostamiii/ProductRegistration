@@ -1,8 +1,6 @@
 F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
 F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
 F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
-F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\CoreLayer.dll
-F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\CoreLayer.pdb
 F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
 F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
@@ -13,3 +11,7 @@ F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\In
 F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
 F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
 F:\رزومه\Project API\ProductRegistration\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
+F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Application.dll
+F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Domain.dll
+F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Application.pdb
+F:\رزومه\Project API\ProductRegistration\Infrastructure\bin\Debug\net7.0\Domain.pdb

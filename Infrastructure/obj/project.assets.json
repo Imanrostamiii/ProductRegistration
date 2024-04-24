@@ -1145,7 +1145,20 @@
           }
         }
       },
-      "CoreLayer/1.0.0": {
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1156,10 +1169,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
         "compile": {
-          "bin/placeholder/CoreLayer.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CoreLayer.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -3420,15 +3433,20 @@
         "version.txt"
       ]
     },
-    "CoreLayer/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../CoreLayer/CoreLayer.csproj",
-      "msbuildProject": "../CoreLayer/CoreLayer.csproj"
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "CoreLayer >= 1.0.0"
+      "Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3466,8 +3484,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\رزومه\\Project API\\ProductRegistration\\CoreLayer\\CoreLayer.csproj": {
-              "projectPath": "F:\\رزومه\\Project API\\ProductRegistration\\CoreLayer\\CoreLayer.csproj"
+            "F:\\رزومه\\Project API\\ProductRegistration\\Application\\Application.csproj": {
+              "projectPath": "F:\\رزومه\\Project API\\ProductRegistration\\Application\\Application.csproj"
             }
           }
         }
